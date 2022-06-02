@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO CRUD</title>
+    <link rel="stylesheet" href="practica7.css">
+</head>
+<body>
+    <div class="titulo">
+        Grupo PRBM
+    </div>
+    <div class="contenedor">
+        <div class="cabecera">
+            <h4>Agregar Alumnos</h4>
+        </div>
+        <br>
+        <form action="" id="falumnos" class="datos">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre del Alumno" required>
+            <br><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido del Alumno" required>
+            <br><br>
+            <label id="textocal">
+                Calificacion
+                <input type="number" name="cal" id="cal" min="0" max="10" step="1" value="7" required>
+            </label>
+            <br><br>
+            <input type="submit" id="guardar" value="Guardar">
+        </form>
+    </div>
+
+    <div class="mensaje"></div>
+
+    <div id="listado">
+        <table>
+            <thead>
+                <tr id="encabezado">
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Calificacion</th>
+                    <th>Operaciones</th>
+                </tr>
+            </thead>
+            <tbody id="datost"></tbody>
+        </table>
+    </div>
+
+    <script src="practica7.js" type="module"></script>
+    
+</body>
+</html>
